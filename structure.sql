@@ -1,4 +1,4 @@
-create database ecole_databases ;
+
 use ecole_databases;
 
 CREATE TABLE roles(
@@ -33,9 +33,9 @@ id int auto_increment primary key,
  
 );
 
-CREATE TABLE `students` (
+CREATE TABLE students (
   id int auto_increment primary key,
-  date_birth int,
+  date_birth date,
   student_nb int,
   user_id int,
   classe_id int,
@@ -45,7 +45,7 @@ CREATE TABLE `students` (
 
 create table enrollements (
   id int auto_increment primary key,
-  enrolle_date int,
+  enrolle_date data,
   student_id int,
   cours_id int,
   statuts varchar (100),
